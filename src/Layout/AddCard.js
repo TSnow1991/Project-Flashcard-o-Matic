@@ -56,8 +56,6 @@ function AddCard({deck, setDeck, card, setCard}) {
           changeBack={changeBack}
           handleSave={handleSave}
           handleDoneCancel={handleDone}
-          cardValueFront="Front side of the card"
-          cardValueBack="Back side of the card"
         />
       </div>
   </div>
