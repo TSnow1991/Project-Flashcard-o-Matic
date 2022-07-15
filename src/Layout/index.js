@@ -15,11 +15,10 @@ import {
 } from "react-router-dom";
 
 function Layout() {
-  //DeckList => listDecks
   const [decks, setDecks] = useState([]);
-  //Study => readDeck - loads deck and cards
+  
   const [deck, setDeck] = useState({});
-  //AddCard, editCard, => createCard, updateCard
+  
   const [card, setCard] = useState([]);
 
   return (

@@ -39,12 +39,12 @@ export function Study() {
     return <NotEnoughCards deck={deck} />;
   }
 
-  //function to flip cards
+  
   function controlFlip() {
     setStudy({
       ...study,
-      front: !study.front, //change front to true or false based on current
-      flipped: true, // always turns flipped to true, activates next button
+      front: !study.front, 
+      flipped: true, 
     });
   }
 
@@ -66,12 +66,12 @@ export function Study() {
     ) : null;
   }
 
-  //returns whether or not the current card is the last card.
+  
   function atMax() {
     return study.currentCard >= study.cardMax - 1;
   }
 
-  //handles flipping to the next card and leaving the page
+  
   function nextCard() {
     if (atMax()) {
       if (window.confirm("Start Over?")) {
@@ -93,9 +93,7 @@ export function Study() {
       });
     }
   }
-  //return JSX that displays "content" as either front or back of card info,
-  //  and buttons that change the state when the card is flipped and
-  //  when next card is to be displayed.
+  
   return (
     <div>
       <nav aria-label="breadcrumb">
